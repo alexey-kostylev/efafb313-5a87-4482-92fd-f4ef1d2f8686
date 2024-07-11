@@ -31,9 +31,9 @@ The requested logic is implemented as a static class located in test.Api project
 Continuous integration is implemented using github actions and located in ./github/workflows/test-api.yml. Also, it is referenced as a solution item for a quick access.
 
 Docker support is implementing by adding a dockerfile and specifying a custom port mapping to "5001" for https and "5000" for http.
-Solution can be run in a docker mode by selecting "Container (Dockerfile)" from running options in visual studio or running manually docker commands: "docker build" and "docker run" frtom the root directory
+Solution can be run in a docker mode by selecting "Container (Dockerfile)" from running options in visual studio or running manually docker commands: "docker build" and "docker run" from the root directory and using port 5001 for acccessing API.
 
-Code linting is implemented a as a part of a building process using .editorconfig file and setting project property "EnforceCodeStyleInBuild" to true
+Code linting is implemented as a part of a building process using .editorconfig file and setting project property "EnforceCodeStyleInBuild" to true
 
 Code coverage reporting is implemented using coverlet package and is available by running 
 ```text
