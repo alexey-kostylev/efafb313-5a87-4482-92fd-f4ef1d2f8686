@@ -10,6 +10,9 @@
         <UserSecretsId>d31f05f2-2033-4d5c-8120-e577f8d9e989</UserSecretsId>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="test.UnitTests" />
+  </ItemGroup>
   <PropertyGroup>
     <DockerfileRunArguments>-p "5001:8081" -p "5000:8080"</DockerfileRunArguments>
   </PropertyGroup>

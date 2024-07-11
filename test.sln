@@ -8,8 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE3A7A62-FC24-47D7-8BBE-FF544D6E5861}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		.github\workflows\test-api.yml = .github\workflows\test-api.yml
 		test-cases.md = test-cases.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test.UnitTests", "test.UnitTests\test.UnitTests.csproj", "{5F65B5D4-A7F4-4C16-B3E8-FB821C0B753C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +24,10 @@ Global
 		{50F2B0AD-9CE4-44EE-8420-175AD6188B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F2B0AD-9CE4-44EE-8420-175AD6188B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F2B0AD-9CE4-44EE-8420-175AD6188B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F65B5D4-A7F4-4C16-B3E8-FB821C0B753C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F65B5D4-A7F4-4C16-B3E8-FB821C0B753C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F65B5D4-A7F4-4C16-B3E8-FB821C0B753C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F65B5D4-A7F4-4C16-B3E8-FB821C0B753C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

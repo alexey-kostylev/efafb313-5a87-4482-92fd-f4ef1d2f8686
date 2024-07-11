@@ -24,3 +24,10 @@ When you are done, share the repository URL with the person who asked you to try
 ## Problem
 
 Develop a function that takes one string input of any number of integers separated by single whitespace. The function then outputs the longest increasing subsequence (increased by any number) present in that sequence. If more than 1 sequence exists with the longest length, output the earliest one. You may develop supporting functions as many as you find reasonable. Your function should pass the test cases provided below.
+
+## Running Tests
+unit tests are available to run from command line using this command:
+dotnet test
+
+to include code coverage:
+dotnet test /p:CollectCoverage=true
