@@ -18,7 +18,7 @@ jobs:
 
     env:
       Solution_Name: test.sln
-      Test_Project_Path: test.unittests
+      Test_Project_Path: test.UnitTests
 
     steps:
     - name: Checkout
@@ -46,5 +46,5 @@ jobs:
       if: always()
       with:
         files: |
-            ./**/*.opencover.xml"
+            ${{env.Test_Project_Path}}/TestResults/*.xml"
 
