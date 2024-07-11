@@ -14,12 +14,35 @@ namespace test.UnitTests
 {
     public class StringParserUtilTests : TestBase
     {
-        [Fact]
-        public void NullInputShouldReturnNull()
+        [Theory]
+        [InlineData("", "")]
+        [InlineData(null, "")]
+        [InlineData("a b", "")]
+        [InlineData("1 a 2", "1 2")]
+        public void ShouldProcessEdgeConditions(string input, string expected)
         {
-            var actual = StringParserUtil.ExtractLongestSubSequence(null);
+            var actual = StringParserUtil.ExtractLongestSubSequence(input);
 
-            actual.Should().BeNull();
+            actual.Should().Be(expected);
+        }
+
+        [Theory]
+        [InlineData("1\t2", "1 2")]
+        [InlineData("1\n2", "1 2")]
+        [InlineData("1 2", "1 2")]
+        public void ShouldProcessWhiteSpaces(string input, string expected)
+        {
+            var actual = StringParserUtil.ExtractLongestSubSequence(input);
+
+            actual.Should().Be(expected);
+        }
+
+        [Theory]
+        [ClassData(typeof(StringParserTestData))]
+        public void ShouldPassTestData(string input, string expectedOutput)
+        {
+            var actual = StringParserUtil.ExtractLongestSubSequence(input);
+            actual.Should().Be(expectedOutput);
         }
     }
 }
