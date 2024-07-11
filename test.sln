@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test.api", "test.api\test.a
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE3A7A62-FC24-47D7-8BBE-FF544D6E5861}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 		.github\workflows\test-api.yml = .github\workflows\test-api.yml
 		test-cases.md = test-cases.md
